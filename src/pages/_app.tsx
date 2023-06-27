@@ -53,24 +53,24 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
     window.zE('webWidget', 'show');
   }, [authStore.accountId, authStore.signedIn, componentSrc]);
 
-  useEffect(() => {
-    const interval = setInterval(zendeskCheck, 20);
+  // useEffect(() => {
+  //   const interval = setInterval(zendeskCheck, 20);
 
-    function zendeskCheck() {
-      // once the zendesk widget comes online, style it
-      const zwFrame = document.getElementById('launcher') as HTMLIFrameElement | null;
-      const zwEmbed = zwFrame?.contentDocument?.getElementById('Embed');
-      const zwButton = zwEmbed?.querySelector('[data-testid="launcher"]');
-      if (zwButton) {
-        styleZendesk();
-        clearInterval(interval);
-      }
-    }
+  //   function zendeskCheck() {
+  //     // once the zendesk widget comes online, style it
+  //     const zwFrame = document.getElementById('launcher') as HTMLIFrameElement | null;
+  //     const zwEmbed = zwFrame?.contentDocument?.getElementById('Embed');
+  //     const zwButton = zwEmbed?.querySelector('[data-testid="launcher"]');
+  //     if (zwButton) {
+  //       styleZendesk();
+  //       clearInterval(interval);
+  //     }
+  //   }
 
-    () => {
-      clearInterval(interval);
-    };
-  }, []);
+  //   () => {
+  //     clearInterval(interval);
+  //   };
+  // }, []);
 
   return (
     <>

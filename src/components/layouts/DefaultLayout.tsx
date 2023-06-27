@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 
 import { BosLoaderBanner } from '../BosLoaderBanner';
-import { Navigation } from '../navigation/Navigation';
+// import { Navigation } from '../navigation/Navigation';
 
 interface Props {
   children: ReactNode;
@@ -10,7 +10,7 @@ interface Props {
 export function DefaultLayout({ children }: Props) {
   return (
     <>
-      <Navigation />
+      {/* <Navigation /> */}
       <BosLoaderBanner />
 
       {children}
