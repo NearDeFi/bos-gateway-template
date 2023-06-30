@@ -11,7 +11,7 @@ export function PolygonZkEVM() {
     return (
         <Container>
             <VmComponent
-                src="ciocan.near/widget/zkevm"
+                src="mattlock.near/widget/zk-evm-lp"
             />
         </Container>
     )
