@@ -1,4 +1,4 @@
-# NEAR Discovery (BOS)
+# BOS Gateway for Polygon zkEVM apps
 
 ## Setup & Development
 
@@ -14,48 +14,17 @@ Start development version:
 pnpm dev
 ```
 
-## Local Component Development
+The entry component is ```PolygonZkEVM``` and it's located at
+```/src/components/polygon/index.tsx```
 
-1. Run an instance of a component server like [near/bos-loader](https://github.com/near/bos-loader) which serves component code in the following format
+It loads the ```mattlock.near/widget/zk-evm-lp``` BOS component. The source can be found [here](https://near.org/near/widget/ComponentDetailsPage?src=mattlock.near/widget/zk-evm-lp&tab=source).
 
-   ```json
-   {
-     "components": {
-       "<component path 1>": {
-         "code": "<component 1 code>"
-       },
-       "<component path 2>": {
-         "code": "<component 2 code>"
-       }
-     }
-   }
-   ```
+## Deployment
 
-   this will be used as a `redirectMap` in `ViewPage`
+This is a [Next.js](https://github.com/vercel/next.js/) app and a fork of [NEAR Discovery](https://github.com/near/near-discovery) gateway app.
 
-2. Open the `/flags` route of your viewer and set the BOS Loader URL e.g. `http://127.0.0.1:3030`
+For static exports just run ```next build``` and upload the build files to your hosting provider. More info [here](https://nextjs.org/docs/pages/building-your-application/deploying/static-exports).
 
-Note: there is no hot reload, you must refresh the page to see component changes
+For Vercel, Cloudflare or others that supports a Next app just connect the repo and follow the deploy steps from the dashboards.
 
-## Local VM Development
-
-> This section needs testing since switch to pnpm
-
-If you need to make changes to the VM and test locally, you can easily link your local copy of the VM:
-
-1. Clone the VM repo as a sibling of `near-discovery`:
-
-```
-git clone git@github.com:NearSocial/VM.git
-```
-
-Folder Structure:
-
-```
-/near-discovery
-/VM
-```
-
-2. Run `pnpm link ../VM`
-
-3. Any time you make changes to the `VM`, run `pnpm build` inside the `VM` project in order for the viewer project to pick up the changes
+More info on Next.js deployments [here](https://nextjs.org/docs/pages/building-your-application/deploying/static-exports).
