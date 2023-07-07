@@ -4,13 +4,14 @@
 
 Initialize repo:
 
-```
+```bash
 pnpm i
 ```
 
 Start development version:
 
-```
+```bash
+cp .env.example .env
 pnpm dev
 ```
 
