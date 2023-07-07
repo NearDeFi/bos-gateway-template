@@ -28,3 +28,10 @@ For static exports just run ```next build``` and upload the build files to your 
 For Vercel, Cloudflare or others that supports a Next app just connect the repo and follow the deploy steps from the dashboards.
 
 More info on Next.js deployments [here](https://nextjs.org/docs/pages/building-your-application/deploying/static-exports).
+
+## Running with docker
+
+```bash
+docker build -t bos-polygon-gateway .
+docker run -p 3000:3000 bos-polygon-gateway
+```
