@@ -8,6 +8,17 @@ import { singletonHook } from 'react-singleton-hook';
 
 import icon from '@/assets/images/near_social_icon.svg';
 
+const polygonIcon = `
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2500 2500" xml:space="preserve">
+    <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="-457.234" y1="2294.878" x2="2120.766" y2="713.878" gradientTransform="matrix(1 0 0 -1 0 2497.89)">
+      <stop offset="0" stop-color="#a229c5"/>
+      <stop offset="1" stop-color="#7b3fe4"/>
+    </linearGradient>
+    <path d="M1250 2500c688 0 1250-563 1250-1250C2500 562 1937 0 1250 0 562 0 0 563 0 1250c0 688 563 1250 1250 1250z" fill="url(#a)"/>
+    <path d="m1612 1520 354-204c19-11 30-31 30-53V855c0-22-12-42-30-53l-354-204c-19-11-42-11-61 0l-354 204c-19 11-30 31-30 53v730l-248 143-248-143v-286l248-143 164 94v-192l-133-77c-9-5-20-8-30-8-11 0-21 3-30 8l-354 204c-19 11-30 31-30 53v408c0 22 12 42 30 53l354 204c19 11 42 11 61 0l354-204c19-11 30-31 30-53V916l4-3 244-141 248 143v286l-248 143-163-94v192l133 77c19 11 42 11 61 0l-2 1z" fill="#fff"/>
+  </svg>
+`
+
 const web3onboardKey = 'web3-onboard:connectedWallets';
 
 const wcV1InitOptions = {
@@ -42,17 +53,21 @@ export const onboard = init({
       token: 'ETH',
       label: 'Polygon zkEVM',
       rpcUrl: 'https://zkevm.polygonscan.com/',
+      color: '#7b3fe4',
+      icon: polygonIcon,
     },
     {
       id: 1442,
       token: 'ETH',
       label: 'zkEVM Testnet',
       rpcUrl: 'https://testnet-zkevm.polygonscan.com',
+      color: '#7b3fe4',
+      icon: polygonIcon,
     },
   ],
   appMetadata: {
     name: 'NEAR',
-    icon: icon.content,
+    icon: icon.src,
     description: 'NEAR - BOS',
   },
   theme: 'dark',
