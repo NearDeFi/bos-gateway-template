@@ -52,7 +52,7 @@ export const onboard = init({
       id: 1101,
       token: 'ETH',
       label: 'Polygon zkEVM',
-      rpcUrl: 'https://zkevm.polygonscan.com/',
+      rpcUrl: 'https://zkevm-rpc.com',
       color: '#7b3fe4',
       icon: polygonIcon,
     },
