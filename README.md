@@ -1,4 +1,4 @@
-# BOS Gateway for Polygon zkEVM apps
+# BOS Gateway Template
 
 ## Setup & Development
 
@@ -15,10 +15,10 @@ cp .env.example .env
 pnpm dev
 ```
 
-The entry component is ```PolygonZkEVM``` and it's located at
-```/src/components/polygon/index.tsx```
+The entry component is ```BosMain``` and it's located at
+```/src/components/index.tsx```
 
-It loads the ```mattlock.near/widget/zk-evm-lp``` BOS component. The source can be found [here](https://near.org/near/widget/ComponentDetailsPage?src=mattlock.near/widget/zk-evm-lp&tab=source).
+It loads the ```ciocan.near/widget/hello-world``` BOS component. The source can be found [here](https://near.org/near/widget/ComponentDetailsPage?src=ciocan.near/widget/hello-world&tab=source).
 
 ## Deployment
 
@@ -33,6 +33,6 @@ More info on Next.js deployments [here](https://nextjs.org/docs/pages/building-y
 ## Running with docker
 
 ```bash
-docker build -t bos-polygon-gateway .
-docker run -p 3000:3000 bos-polygon-gateway
+docker build -t bos-gateway-template .
+docker run -p 3000:3000 bos-gateway-template
 ```

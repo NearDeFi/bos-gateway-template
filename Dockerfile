@@ -10,7 +10,7 @@ RUN apk add --no-cache curl \
 WORKDIR /app
 
 # Clone the repository
-RUN git clone https://github.com/NearDeFi/polygon-bos-gateway.git .
+RUN git clone https://github.com/NearDeFi/bos-gateway-template.git .
 
 # copy .env.example to .env
 RUN cp .env.example .env

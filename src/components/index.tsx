@@ -7,11 +7,11 @@ const Container = styled.div`
 `;
 
 
-export function PolygonZkEVM() {
+export default function BosMain() {
     return (
         <Container>
             <VmComponent
-                src="mattlock.near/widget/zk-evm-lp"
+                src="ciocan.near/widget/hello-world"
             />
         </Container>
     )
