@@ -1,5 +1,7 @@
 # BOS Gateway Template
 
+This repository contains a clean, light-weight gateawy for the [Blockchain Operating System](https://near.org/blog/near-announces-the-blockchain-operating-system) (BOS). It serves as a great starting point for launching a customized BOS gateway. Contributions are most welcome! 
+
 ## Setup & Development
 
 Initialize repo:
