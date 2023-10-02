@@ -10,7 +10,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build-tauri": "pnpm tauri build"
   },
   "dependencies": {
     "@braintree/sanitize-url": "6.0.0",
@@ -67,6 +68,7 @@
     "zustand": "^4.3.7"
   },
   "devDependencies": {
+    "@tauri-apps/cli": "^1.5.0",
     "@types/analytics-node": "^3.1.11",
     "@types/big.js": "^6.1.6",
     "@types/lodash": "^4.14.194",

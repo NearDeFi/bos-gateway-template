@@ -1,6 +1,6 @@
 # BOS Gateway Template
 
-This repository contains a clean, light-weight gateawy for the [Blockchain Operating System](https://near.org/blog/near-announces-the-blockchain-operating-system) (BOS). It serves as a great starting point for launching a customized BOS gateway. Contributions are most welcome! 
+This repository contains a clean, light-weight gateawy for the [Blockchain Operating System](https://near.org/blog/near-announces-the-blockchain-operating-system) (BOS). It serves as a great starting point for launching a customized BOS gateway. Contributions are most welcome!
 
 ## Setup & Development
 
@@ -38,3 +38,32 @@ More info on Next.js deployments [here](https://nextjs.org/docs/pages/building-y
 docker build -t bos-gateway-template .
 docker run -p 3000:3000 bos-gateway-template
 ```
+
+## Building the native apps
+
+We use [Tauri](https://tauri.app/) to build the native apps.
+
+### Prerequisites
+
+The first step is to install Rust and system dependencies
+More info here [here](https://tauri.app/v1/guides/getting-started/prerequisites).
+
+### Building
+
+Edit the ```src-tauri/tauri.conf.json``` file and change:
+
+- ```productName``` from ```BOS Gateway Template``` to your gateway name.
+- ```identifier``` from ```com.bos-gateway-template``` to your gateway identifier.
+- ```icon``` array to your gateway icons.
+- ```windows.title``` from ```BOS Gateway Template``` to your gateway name.
+
+Then run:
+
+```bash
+pnpm build-tauri
+```
+
+The native app will be located in ```src-tauri/target/release/bundle```.
+
+Note: Tauri relies heavily on native libraries and toolchains, so meaningful cross-compilation is not possible at the current moment. The next best option is to compile utilizing a CI/CD pipeline
+More info [here](https://tauri.app/v1/guides/building/cross-platform).
