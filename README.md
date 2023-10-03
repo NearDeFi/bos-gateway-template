@@ -45,7 +45,7 @@ We use [Tauri](https://tauri.app/) to build the native apps.
 
 ### Prerequisites
 
-The first step is to install Rust and system dependencies
+The first step is to install Rust and system dependencies.
 More info here [here](https://tauri.app/v1/guides/getting-started/prerequisites).
 
 ### Building

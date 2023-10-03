@@ -12,6 +12,7 @@ export default function BosMain() {
         <Container>
             <VmComponent
                 src="ciocan.near/widget/hello-world"
+                // src="mattlock.near/widget/zk-evm-lp"
             />
         </Container>
     )
