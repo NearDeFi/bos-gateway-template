@@ -4,23 +4,29 @@ This repository contains a clean, light-weight gateawy for the [Blockchain Opera
 
 ## Setup & Development
 
-Initialize repo:
+1. Initialize repo:
 
-```bash
-pnpm i
-```
+    ```bash
+    pnpm i
+    ```
+
+2. Add .env file:
+
+    ```bash
+    cp .env.example .env
+    ```
+
+3. The entry component is ```BosMain``` and it's located at ```/src/components/index.tsx```
+
+    It loads the ```ciocan.near/widget/hello-world``` BOS component. The source can be found [here](https://near.org/near/widget/ComponentDetailsPage?src=ciocan.near/widget/hello-world&tab=source).
+
+4. Edit ```web3.js``` and change the projectId for WalletConnect
 
 Start development version:
 
 ```bash
-cp .env.example .env
 pnpm dev
 ```
-
-The entry component is ```BosMain``` and it's located at
-```/src/components/index.tsx```
-
-It loads the ```ciocan.near/widget/hello-world``` BOS component. The source can be found [here](https://near.org/near/widget/ComponentDetailsPage?src=ciocan.near/widget/hello-world&tab=source).
 
 ## Deployment
 
