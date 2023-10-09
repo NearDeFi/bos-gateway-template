@@ -10,7 +10,7 @@ dependencies:
     version: 6.0.0
   '@keypom/selector':
     specifier: ^1.2.3
-    version: 1.2.3(@near-js/accounts@0.1.3)(@near-js/crypto@0.0.4)(@near-js/keystores-browser@0.0.4)(@near-js/keystores-node@0.0.4)(@near-js/keystores@0.0.4)(@near-js/transactions@0.2.0)(@near-js/types@0.0.4)(@near-js/utils@0.0.4)(@near-js/wallet-account@0.0.6)(@near-wallet-selector/core@8.1.1)(@types/react@18.2.0)(near-api-js@2.1.3)(react-dom@18.2.0)(react@18.2.0)
+    version: 1.2.3(@near-js/accounts@0.1.4)(@near-js/crypto@0.0.4)(@near-js/keystores-browser@0.0.4)(@near-js/keystores-node@0.0.4)(@near-js/keystores@0.0.4)(@near-js/transactions@0.2.1)(@near-js/types@0.0.4)(@near-js/utils@0.0.4)(@near-js/wallet-account@0.0.6)(@near-wallet-selector/core@8.1.1)(@types/react@18.2.0)(near-api-js@2.1.3)(react-dom@18.2.0)(react@18.2.0)
   '@monaco-editor/react':
     specifier: ^4.4.6
     version: 4.5.1(monaco-editor@0.39.0)(react-dom@18.2.0)(react@18.2.0)
@@ -170,8 +170,8 @@ dependencies:
 
 devDependencies:
   '@tauri-apps/cli':
-    specifier: ^1.5.0
-    version: 1.5.0
+    specifier: ^1.5.1
+    version: 1.5.1
   '@types/analytics-node':
     specifier: ^3.1.11
     version: 3.1.11
@@ -1756,7 +1756,7 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: false
 
-  /@keypom/core@1.0.2(@near-js/accounts@0.1.3)(@near-js/crypto@0.0.4)(@near-js/keystores-browser@0.0.4)(@near-js/keystores@0.0.4)(@near-js/transactions@0.2.0)(@near-js/types@0.0.4)(@near-js/utils@0.0.4)(@near-js/wallet-account@0.0.6)(near-api-js@2.1.3):
+  /@keypom/core@1.0.2(@near-js/accounts@0.1.4)(@near-js/crypto@0.0.4)(@near-js/keystores-browser@0.0.4)(@near-js/keystores@0.0.4)(@near-js/transactions@0.2.1)(@near-js/types@0.0.4)(@near-js/utils@0.0.4)(@near-js/wallet-account@0.0.6)(near-api-js@2.1.3):
     resolution: {integrity: sha512-FFmOwbZCj3g8IHEdnhbTMHIp53rKjcorOlyoIKk0HaoC8rB/+Cl/BP6It1HP6DxGHorccs7yB4RXBnJei60hAg==}
     requiresBuild: true
     peerDependencies:
@@ -1769,11 +1769,11 @@ packages:
       '@near-js/utils': ^0.0.4
       '@near-js/wallet-account': ^0.0.6
     dependencies:
-      '@near-js/accounts': 0.1.3
+      '@near-js/accounts': 0.1.4
       '@near-js/crypto': 0.0.4
       '@near-js/keystores': 0.0.4
       '@near-js/keystores-browser': 0.0.4
-      '@near-js/transactions': 0.2.0
+      '@near-js/transactions': 0.2.1
       '@near-js/types': 0.0.4
       '@near-js/utils': 0.0.4
       '@near-js/wallet-account': 0.0.6
@@ -1786,7 +1786,7 @@ packages:
       - near-api-js
     dev: false
 
-  /@keypom/selector@1.2.3(@near-js/accounts@0.1.3)(@near-js/crypto@0.0.4)(@near-js/keystores-browser@0.0.4)(@near-js/keystores-node@0.0.4)(@near-js/keystores@0.0.4)(@near-js/transactions@0.2.0)(@near-js/types@0.0.4)(@near-js/utils@0.0.4)(@near-js/wallet-account@0.0.6)(@near-wallet-selector/core@8.1.1)(@types/react@18.2.0)(near-api-js@2.1.3)(react-dom@18.2.0)(react@18.2.0):
+  /@keypom/selector@1.2.3(@near-js/accounts@0.1.4)(@near-js/crypto@0.0.4)(@near-js/keystores-browser@0.0.4)(@near-js/keystores-node@0.0.4)(@near-js/keystores@0.0.4)(@near-js/transactions@0.2.1)(@near-js/types@0.0.4)(@near-js/utils@0.0.4)(@near-js/wallet-account@0.0.6)(@near-wallet-selector/core@8.1.1)(@types/react@18.2.0)(near-api-js@2.1.3)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-Z/VlZwhSt3NJ+Dv5AkgXNZ2rcFbbrd4F2sC5oTDm/TH6ocoyx5MR6ltxCWEP5/D/8Zi1MghtCtZpxrh1sHub5A==}
     requiresBuild: true
     peerDependencies:
@@ -1803,12 +1803,12 @@ packages:
       react: ^18.2.0
       react-dom: 18.2.0
     dependencies:
-      '@keypom/core': 1.0.2(@near-js/accounts@0.1.3)(@near-js/crypto@0.0.4)(@near-js/keystores-browser@0.0.4)(@near-js/keystores@0.0.4)(@near-js/transactions@0.2.0)(@near-js/types@0.0.4)(@near-js/utils@0.0.4)(@near-js/wallet-account@0.0.6)(near-api-js@2.1.3)
-      '@near-js/accounts': 0.1.3
+      '@keypom/core': 1.0.2(@near-js/accounts@0.1.4)(@near-js/crypto@0.0.4)(@near-js/keystores-browser@0.0.4)(@near-js/keystores@0.0.4)(@near-js/transactions@0.2.1)(@near-js/types@0.0.4)(@near-js/utils@0.0.4)(@near-js/wallet-account@0.0.6)(near-api-js@2.1.3)
+      '@near-js/accounts': 0.1.4
       '@near-js/crypto': 0.0.4
       '@near-js/keystores-browser': 0.0.4
       '@near-js/keystores-node': 0.0.4
-      '@near-js/transactions': 0.2.0
+      '@near-js/transactions': 0.2.1
       '@near-js/types': 0.0.4
       '@near-js/utils': 0.0.4
       '@near-js/wallet-account': 0.0.6
@@ -3561,8 +3561,8 @@ packages:
       tslib: 2.5.0
     dev: false
 
-  /@tauri-apps/cli-darwin-arm64@1.5.0:
-    resolution: {integrity: sha512-wvEfcSBjlh1G8uBiylMNFgBtAyk4mXfvDFcGyigf/2ui7Wve6fcAFDJdTVwiHOZ4Wxnw6BD3lIkVMQdDpE+nFg==}
+  /@tauri-apps/cli-darwin-arm64@1.5.1:
+    resolution: {integrity: sha512-o2FSGj72gqJjlVtuScXQZUgiRs90PS9gG7YAz0Hgr4nV1MfIn9U6JVj6R+mnAEZBCK8qdy5jdemhmNKDDoiYQg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
@@ -3570,8 +3570,8 @@ packages:
     dev: true
     optional: true
 
-  /@tauri-apps/cli-darwin-x64@1.5.0:
-    resolution: {integrity: sha512-pWzLMAMslx3dkLyq1f4PpuEhgUs8mPISM5nQoHfgYYchJk6Ip1YtWupo56h5QjqyRNPUsSYT8DVGIw0Oi8auXQ==}
+  /@tauri-apps/cli-darwin-x64@1.5.1:
+    resolution: {integrity: sha512-G1/v6AJPP5oIcjsOxZshag28wdmDx1Fis2yz545aUk7oKU86A3ZJpz0b8BaXkr93w04xGcmGAaspZeXMmTvrbw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
@@ -3579,8 +3579,8 @@ packages:
     dev: true
     optional: true
 
-  /@tauri-apps/cli-linux-arm-gnueabihf@1.5.0:
-    resolution: {integrity: sha512-hP3nAd0TjxblIAgriXhdX33sKXwbkY3CKsWBVB3O+5DOGy7XzKosIt0KaqiV8BHI2pbHMVOwTZuvjdK8pPLULQ==}
+  /@tauri-apps/cli-linux-arm-gnueabihf@1.5.1:
+    resolution: {integrity: sha512-hPDOUMviffyX5BySk6RuD7IZZeMuNUJzKWHxVWa0NHJPfxQOIPWwYWbk6TascrVk9GZYAImcB0yKfrll8I0VTg==}
     engines: {node: '>= 10'}
     cpu: [arm]
     os: [linux]
@@ -3588,8 +3588,8 @@ packages:
     dev: true
     optional: true
 
-  /@tauri-apps/cli-linux-arm64-gnu@1.5.0:
-    resolution: {integrity: sha512-/AwGSjUplzeiGWbKP8rAW4gQx5umWiaQJ0ifx6NakA/sIrhRXPYTobwzg4ixw31ALQNXaEosJCkmvXyHUvoUYw==}
+  /@tauri-apps/cli-linux-arm64-gnu@1.5.1:
+    resolution: {integrity: sha512-EJjTXqZchFLVrFgfxwstrQj7NwVDirffLhw5hRWS3L3Iys3IvqzIMVIA+GrY7KsaPwq7qaSqE1CDtP1wejE/9g==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -3597,8 +3597,8 @@ packages:
     dev: true
     optional: true
 
-  /@tauri-apps/cli-linux-arm64-musl@1.5.0:
-    resolution: {integrity: sha512-OFzKMkg3bmBjr/BYQ1kx4QOHL+JSkzX+Cw8RcG7CKnq8QoJyg8N0K0UTskgsVwlCN4l7bxeuSLvEveg4SBA2AQ==}
+  /@tauri-apps/cli-linux-arm64-musl@1.5.1:
+    resolution: {integrity: sha512-XgJIk0AcxRL4pWVjfj0wiC9WnIZoUIVLPcQs86dNxoqzwAvADdNYp+McXf3/MDxX8uGEzpgdvlqr4T+50c8f6w==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -3606,8 +3606,8 @@ packages:
     dev: true
     optional: true
 
-  /@tauri-apps/cli-linux-x64-gnu@1.5.0:
-    resolution: {integrity: sha512-V2stfUH3Qrc3cIXAd+cKbJruS1oJqqGd40GTVcKOKlRk9Ef9H3WNUQ5PyWKj1t1rk8AxjcBO/vK+Unkuy1WSCw==}
+  /@tauri-apps/cli-linux-x64-gnu@1.5.1:
+    resolution: {integrity: sha512-VoVrIn7b+F2n0LJoDkLGXQJsPV/U1h3QnjRNE+Tcju6xVPBx64H0vfb7lC3S4QfVpiQ4Uc+1UD3Slvn4jGpL/A==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -3615,8 +3615,8 @@ packages:
     dev: true
     optional: true
 
-  /@tauri-apps/cli-linux-x64-musl@1.5.0:
-    resolution: {integrity: sha512-qpcGeesuksxzE7lC3RCnikTY9DCRMnAYwhWa9i8MA7pKDX1IXaEvAaXrse44XCZUohxLLgn2k2o6Pb+65dDijQ==}
+  /@tauri-apps/cli-linux-x64-musl@1.5.1:
+    resolution: {integrity: sha512-tQi2K0LYW80BLud7ZFOy3WxCM2VjDRxuhxOYhtcLG39cIeGqsSz07LwiCFNBn4vy2J47TnZ+8XDRAOtxSFe25w==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -3624,8 +3624,8 @@ packages:
     dev: true
     optional: true
 
-  /@tauri-apps/cli-win32-arm64-msvc@1.5.0:
-    resolution: {integrity: sha512-Glt/AEWwbFmFnQuoPRbB6vMzCIT9jYSpD59zRP8ljhRSzwDHE59q5nXOrheLKICwMmaXqtAuCIq9ndDBKghwoQ==}
+  /@tauri-apps/cli-win32-arm64-msvc@1.5.1:
+    resolution: {integrity: sha512-BdVwzVXY2JWBtWEO/G0//jIWXeWR52+KG0+kyoHO6QTxkncLrN5q2RldvXOe7CvhKe/qmgbkNosj5jWi7t49kQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
@@ -3633,8 +3633,8 @@ packages:
     dev: true
     optional: true
 
-  /@tauri-apps/cli-win32-ia32-msvc@1.5.0:
-    resolution: {integrity: sha512-k+R2VI8eZJfRjaRS8LwbkjMBKFaKcWtA/byaFnGDDUnb3VM/WFW++3KjC5Ne2wXpxFW9RVaFiBNIpmRcExI0Qw==}
+  /@tauri-apps/cli-win32-ia32-msvc@1.5.1:
+    resolution: {integrity: sha512-Q0ei4ZUHlGu/b4DP4Cm6WnI5zxpLxnf/vSwR2BYO3XO65TdLee1gTyuwYuSZJYu5jxqSoSusmLyL4F43jHhf9Q==}
     engines: {node: '>= 10'}
     cpu: [ia32]
     os: [win32]
@@ -3642,8 +3642,8 @@ packages:
     dev: true
     optional: true
 
-  /@tauri-apps/cli-win32-x64-msvc@1.5.0:
-    resolution: {integrity: sha512-jEwq9UuUldVyDJ/dsYoHFuZfNZIkxbeDYSMELfZXsRvWWEA8xRYeTkH38S++KU1eBl5dTK0LbxhztEB2HjRT1g==}
+  /@tauri-apps/cli-win32-x64-msvc@1.5.1:
+    resolution: {integrity: sha512-chpsJ5PIwMOdn1IIJ6bj2G7jv9jQryVvhujU0k3kt/5kE7OuLRDYbI5BAIzMOaLoOTgoo8oxcFXQ+enELSxlMQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -3651,21 +3651,21 @@ packages:
     dev: true
     optional: true
 
-  /@tauri-apps/cli@1.5.0:
-    resolution: {integrity: sha512-usY7Ncfkxl2f/ufjWDtp+eJsodlj8ipMKExIt160KR+tx0GtQgLtxRnrKxe1o7wu18Pkqd5JIuWMaOmT3YZeYA==}
+  /@tauri-apps/cli@1.5.1:
+    resolution: {integrity: sha512-Ssj30axil5vPBV3W5ScHXk4umTKu6BhfmMdljfKDOG9K55gAqzBAE2VBC5e/ouclSxZfN+6YNL9VhDXFu/UyeA==}
     engines: {node: '>= 10'}
     hasBin: true
     optionalDependencies:
-      '@tauri-apps/cli-darwin-arm64': 1.5.0
-      '@tauri-apps/cli-darwin-x64': 1.5.0
-      '@tauri-apps/cli-linux-arm-gnueabihf': 1.5.0
-      '@tauri-apps/cli-linux-arm64-gnu': 1.5.0
-      '@tauri-apps/cli-linux-arm64-musl': 1.5.0
-      '@tauri-apps/cli-linux-x64-gnu': 1.5.0
-      '@tauri-apps/cli-linux-x64-musl': 1.5.0
-      '@tauri-apps/cli-win32-arm64-msvc': 1.5.0
-      '@tauri-apps/cli-win32-ia32-msvc': 1.5.0
-      '@tauri-apps/cli-win32-x64-msvc': 1.5.0
+      '@tauri-apps/cli-darwin-arm64': 1.5.1
+      '@tauri-apps/cli-darwin-x64': 1.5.1
+      '@tauri-apps/cli-linux-arm-gnueabihf': 1.5.1
+      '@tauri-apps/cli-linux-arm64-gnu': 1.5.1
+      '@tauri-apps/cli-linux-arm64-musl': 1.5.1
+      '@tauri-apps/cli-linux-x64-gnu': 1.5.1
+      '@tauri-apps/cli-linux-x64-musl': 1.5.1
+      '@tauri-apps/cli-win32-arm64-msvc': 1.5.1
+      '@tauri-apps/cli-win32-ia32-msvc': 1.5.1
+      '@tauri-apps/cli-win32-x64-msvc': 1.5.1
     dev: true
 
   /@types/analytics-node@3.1.11:
