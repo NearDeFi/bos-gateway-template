@@ -20,7 +20,8 @@ This repository contains a clean, light-weight gateawy for the [Blockchain Opera
 
     It loads the ```ciocan.near/widget/hello-world``` BOS component. The source can be found [here](https://near.org/near/widget/ComponentDetailsPage?src=ciocan.near/widget/hello-world&tab=source).
 
-4. Edit ```web3.js``` and change the projectId for WalletConnect
+4. Edit ```web3.js``` and change the projectId and dappUrl for WalletConnect
+(dappUrl is required by WalletConnect to work with the MetaMask on mobile)
 
 Start development version:
 
@@ -73,3 +74,6 @@ The native app will be located in ```src-tauri/target/release/bundle```.
 
 Note: Tauri relies heavily on native libraries and toolchains, so meaningful cross-compilation is not possible at the current moment. The next best option is to compile utilizing a CI/CD pipeline
 More info [here](https://tauri.app/v1/guides/building/cross-platform).
+
+To distribute the native app you need Code Signing for specific platforms.
+More info [here](https://tauri.app/v1/guides/distribution/sign-macos).

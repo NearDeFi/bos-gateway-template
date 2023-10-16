@@ -12,9 +12,9 @@ const web3onboardKey = 'web3-onboard:connectedWallets';
 
 const wcV2InitOptions: any = {
   version: 2,
-  // projectId: '72b7b3359ab477e339a070f615806aa6',
   projectId: 'ecc5180b7e97272ed41e03edd94d793d',
-  requiredChains: [1, 5],
+  requiredChains: [1, 5, 1101, 1442],
+  dappUrl: "https://near.org"
 };
 
 const walletConnect = walletConnectModule(wcV2InitOptions);
