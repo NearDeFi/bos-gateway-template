@@ -26,7 +26,7 @@ This repository contains a clean, light-weight gateawy for the [Blockchain Opera
 Start development version:
 
 ```bash
-pnpm dev
+pnpm dev:next
 ```
 
 ## Deployment
@@ -67,7 +67,7 @@ Edit the ```src-tauri/tauri.conf.json``` file and change:
 Then run:
 
 ```bash
-pnpm build-tauri
+pnpm build
 ```
 
 The native app will be located in ```src-tauri/target/release/bundle```.
