@@ -49,10 +49,10 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - target: aarch64-apple-darwin
-            platform: macos-latest
-          - target: x86_64-apple-darwin
-            platform: macos-latest
+          # - target: aarch64-apple-darwin
+          #   platform: macos-latest
+          # - target: x86_64-apple-darwin
+          #   platform: macos-latest
           - target: x86_64-unknown-linux-gnu
             platform: ubuntu-20.04
           - target: x86_64-pc-windows-msvc
@@ -111,6 +111,9 @@ jobs:
       - name: Install deps (with cache)
         run: pnpm install
 
+      - name: Copy .env.example to .env
+        run: cp .env.example .env
+      
     # - name: Change Version
     #   env:
     #     VERSION: '${{ steps.get_version.outputs.version-without-v }}'
@@ -120,14 +123,14 @@ jobs:
         uses: tauri-apps/tauri-action@v0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # ENABLE_CODE_SIGNING: ${{ secrets.APPLE_CERTIFICATE }}
-          # APPLE_CERTIFICATE: ${{ secrets.APPLE_CERTIFICATE }}
-          # APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
-          # APPLE_SIGNING_IDENTITY: ${{ secrets.APPLE_SIGNING_IDENTITY }}
-          # APPLE_ID: ${{ secrets.APPLE_ID }}
-          # APPLE_PASSWORD: ${{ secrets.APPLE_PASSWORD }}
-          # TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
-          # TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
+          ENABLE_CODE_SIGNING: ${{ secrets.APPLE_CERTIFICATE }}
+          APPLE_CERTIFICATE: ${{ secrets.APPLE_CERTIFICATE }}
+          APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
+          APPLE_SIGNING_IDENTITY: ${{ secrets.APPLE_SIGNING_IDENTITY }}
+          APPLE_ID: ${{ secrets.APPLE_ID }}
+          APPLE_PASSWORD: ${{ secrets.APPLE_PASSWORD }}
+          TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
+          TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
         with:
           tagName: BOS_GATEWAY-v__VERSION__
           releaseName: 'BOS GATEWAY v__VERSION__'
