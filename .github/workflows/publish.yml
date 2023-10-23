@@ -30,6 +30,9 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
+            - name: Use PNPM
+              uses: pnpm/action-setup@v2.2.4
+
             - name: Get version
               id: get_version
               uses: battila7/get-version-action@v2
@@ -58,13 +61,19 @@ jobs:
               run: |
                   rustup target add aarch64-apple-darwin
 
-            - uses: actions/cache@v2
+            - name: Setup pnpm cache
+              uses: actions/cache@v3
               with:
-                  path: '**/node_modules'
-                  key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
+                  path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+                  key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+                  restore-keys: |
+                    ${{ runner.os }}-pnpm-store-
 
-            - name: install frontend dependencies
-              run: yarn install # change this to npm or pnpm depending on which one you use
+            - name: Install deps (with cache)
+              run: pnpm install
+    
+            # - name: Build
+            #   run: pnpm build
 
             # - name: Change Version
             #   env:
