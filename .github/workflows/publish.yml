@@ -1,7 +1,13 @@
 name: 'publish'
+# on:
+#     push:
+#         tags: [v\d+\.\d+\.\d+]
+
 on:
-    push:
-        tags: [v\d+\.\d+\.\d+]
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Build the Tauri apps"
 
 jobs:
     publish-tauri:
