@@ -27,7 +27,7 @@ export const onboard = init({
       id: 1,
       token: 'ETH',
       label: 'Ethereum Mainnet',
-      rpcUrl: 'https://rpc.ankr.com/eth',
+      rpcUrl: 'https://ethereum.publicnode.com',
     },
     {
       id: 3,
@@ -39,7 +39,7 @@ export const onboard = init({
       id: 5,
       token: 'ETH',
       label: 'Goerli - Ethereum Testnet',
-      rpcUrl: 'https://rpc.ankr.com/eth_goerli',
+      rpcUrl: 'https://ethereum-goerli.publicnode.com',
     },
     {
       id: 10,
