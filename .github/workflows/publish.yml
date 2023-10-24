@@ -20,13 +20,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name:  'Automated Version Bump'
-        uses:  'phips28/gh-action-bump-version@master'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag-prefix:  'v'
-          commit-message: 'Release: bumps version to {{version}}'
+      # - name:  'Automated Version Bump'
+      #   uses:  'phips28/gh-action-bump-version@master'
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     tag-prefix:  'v'
+      #     commit-message: 'Release: bumps version to {{version}}'
   
       - name: setup node
         uses: actions/setup-node@v3
@@ -35,7 +35,7 @@ jobs:
 
       - name: get version
         run: echo "PACKAGE_VERSION=$(node -p "require('./package.json').version")" >> $GITHUB_ENV
-        
+
       - name: create release
         id: create-release
         uses: actions/github-script@v6
