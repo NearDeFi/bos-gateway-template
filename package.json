@@ -1,6 +1,6 @@
 {
-  "name": "near-discovery",
-  "version": "0.1.0",
+  "name": "bos-gateway-template",
+  "version": "v0.1.0",
   "private": true,
   "engines": {
     "node": ">=18.0.0",
