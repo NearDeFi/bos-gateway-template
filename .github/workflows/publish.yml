@@ -62,6 +62,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name:  'Automated Version Bump'
+        uses:  'phips28/gh-action-bump-version@master'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag-prefix:  'v'
+          commit-message: 'Release: bumps version to {{version}}'
+        
       - name: Use PNPM
         uses: pnpm/action-setup@v2
         with:
@@ -113,11 +121,6 @@ jobs:
 
       - name: Copy .env.example to .env
         run: cp .env.example .env
-      
-      - name: Change Version
-        env:
-          VERSION: '${{ steps.get_version.outputs.version-without-v }}'
-        run: make change-version
 
       - name: Build Tauri App
         uses: tauri-apps/tauri-action@v0
