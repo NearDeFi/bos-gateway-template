@@ -7,7 +7,8 @@
     "distDir": "../out"
   },
   "package": {
-    "productName": "BOS Gateway Template"
+    "productName": "BOS Gateway Template",
+    "version": "../package.json"
   },
   "tauri": {
     "allowlist": {
