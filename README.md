@@ -64,6 +64,24 @@ Edit the ```src-tauri/tauri.conf.json``` file and change:
 - ```icon``` array to your gateway icons.
 - ```windows.title``` from ```BOS Gateway Template``` to your gateway name.
 
+
+For the macOS app you need to have a valid Apple Developer account and a valid certificate.
+Set these env variables to configure the build:
+
+```bash
+export APPLE_ID=your-apple-id
+export APPLE_PASSWORD=your-apple-password
+export APPLE_CERTIFICATE=your-apple-certificate
+export APPLE_CERTIFICATE_PASSWORD=your-apple-certificate-password
+export APPLE_DEVELOPER_TEAM_NAME=your-apple-developer-team-name
+export APPLE_SIGNING_IDENTITY=your-apple-developer-code-sign-identity
+```
+
+More info here about the Apple code signing: [here](https://tauri.app/v1/guides/distribution/sign-macos).
+
+Optionally if you want to use the Tauri updater you need to set the ```TAURI_PRIVATE_KEY``` and ```TAURI_KEY_PASSWORD``` env variable. More info here: [here](https://tauri.app/v1/guides/distribution/updater).
+
+
 Then run:
 
 ```bash
@@ -77,3 +95,8 @@ More info [here](https://tauri.app/v1/guides/building/cross-platform).
 
 To distribute the native app you need Code Signing for specific platforms.
 More info [here](https://tauri.app/v1/guides/distribution/sign-macos).
+
+### Publish the release files
+
+Run this action to publish the release files to GitHub:
+[```.github/workflows/publish.yml```](https://github.com/NearDeFi/bos-gateway-template/blob/main/.github/workflows/publish.yml)
