@@ -114,10 +114,10 @@ jobs:
       - name: Copy .env.example to .env
         run: cp .env.example .env
       
-    # - name: Change Version
-    #   env:
-    #     VERSION: '${{ steps.get_version.outputs.version-without-v }}'
-    #   run: make change-version
+      - name: Change Version
+        env:
+          VERSION: '${{ steps.get_version.outputs.version-without-v }}'
+        run: make change-version
 
       - name: Build Tauri App
         uses: tauri-apps/tauri-action@v0
