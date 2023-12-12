@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import { VmComponent } from '@/components/vm/VmComponent';
+import Disclaimer from './Discalaymer';
 
 const Container = styled.div`
     height: 100vh;
@@ -13,7 +14,9 @@ export default function BosMain() {
         <Container>
             <VmComponent
                 src="ciocan.near/widget/bos-showcase"
+                props={{ hideDisclaimer: true }}
             />
+            <Disclaimer />
         </Container>
     )
 }
