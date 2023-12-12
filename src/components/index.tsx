@@ -14,6 +14,7 @@ export default function BosMain() {
         <Container>
             <VmComponent
                 src="ciocan.near/widget/bos-showcase"
+                props={{ hideDisclaimer: true }}
             />
             <Disclaimer />
         </Container>

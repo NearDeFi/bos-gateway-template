@@ -94,13 +94,11 @@ export default function Disclaimer() {
 
     useEffect(() => {
         setIsTauri(!!window.__TAURI__)
-        setAgreed(Boolean(localStorage.getItem("agreed")))
     },[])
 
     const handleAgree = () => {
         if (cb1 && cb2) {
             setAgreed(true)
-            localStorage.setItem("agreed", "true");
         }
     }
 
